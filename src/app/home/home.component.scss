@@ -1,0 +1,57 @@
+.container {
+    width: 100%;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.title-text {
+    padding-left: 7.5rem; 
+    margin: 1rem;
+}
+
+.user-info {
+    float: left;
+    width: 100%;
+}
+
+.user-avatar {
+    float: left; 
+    width: 25%;
+}
+
+.user-avatar-img {
+    padding-left: 4rem;
+    text-align: center;
+}
+
+.user-avatar-text {
+    padding-left: 4rem; 
+    font-weight: 600;
+    text-align: center;
+}
+
+.user-avatar-upload {
+    padding-left: 8.5rem;
+    padding-top: 1rem; 
+}
+
+.user-dep {
+    float: left; 
+    width: 25%; 
+    font-size: 18px;
+}
+
+.user-dep-title {
+    color: #b0b0b3; 
+    font-size: 14px;
+}
+
+.user-title {
+    float: right; 
+    width: 50%; 
+    font-size: 18px;
+}
+

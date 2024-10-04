@@ -1,0 +1,17 @@
+<div>
+  <mat-toolbar>
+    <button mat-icon-button class="header-menu" [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="goToUserPage()">User Information</button>
+      <button mat-menu-item (click)="goToSkillPage()">Skill Evaluation</button>
+      <button mat-menu-item (click)="goToAdminPage()">Skill Management (for admin)</button>
+    </mat-menu>
+    <span>Top X</span>
+    <span class="header-spacer"></span>
+    <img (click)="goToUserPage()" src="../assets/images/Bosch_symbol_logo_black_red.svg" alt=""  class="header-logo">
+  </mat-toolbar>
+</div>
+
+<router-outlet></router-outlet>

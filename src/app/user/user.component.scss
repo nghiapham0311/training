@@ -1,0 +1,89 @@
+.container {
+    width: 100%;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.title-text {
+    padding-left: 3.5rem; 
+    margin: 1rem;
+}
+
+.user-info {
+    float: left;
+    width: 100%;
+}
+
+.user-avatar {
+    float: left; 
+    width: 25%;
+}
+
+.user-avatar-img {
+    padding-left: 4rem;
+    text-align: center;
+}
+
+.user-avatar-text {
+    padding-left: 4rem; 
+    font-weight: 600;
+    text-align: center;
+}
+
+.user-dep {
+    float: left; 
+    width: 25%; 
+    font-size: 18px;
+}
+
+.user-dep-title {
+    color: #b0b0b3; 
+    font-size: 14px;
+}
+
+.user-title {
+    float: right; 
+    width: 50%; 
+    font-size: 18px;
+}
+
+.user-tab {
+    float: left; 
+    width: 100%;
+}
+
+.user-filter {
+    margin-left: 1.5rem; 
+    width: 23% !important;
+}
+
+.table-container {
+    height: 330px;
+    overflow: auto;
+  }
+
+table {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  td, th {
+    width: 25%;
+  }
+
+  .mat-row .mat-cell {
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    cursor: pointer;
+  }
+
+  .mat-row:hover .mat-cell {
+    border-color: currentColor;
+  }

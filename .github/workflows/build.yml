@@ -22,11 +22,11 @@ jobs:
 
       # Step 3: Install dependencies using npm
       - name: Install dependencies
-        run: npm ci  # npm ci is used for faster, more deterministic installs
+        run: npm i  # npm ci is used for faster, more deterministic installs
 
       # Step 4: Build the Angular application
       - name: Build Angular app
-        run: npm run build --if-present -- --prod
+        run: npm run build
 
       # Step 5: Upload dist folder as an artifact
       - name: Upload dist folder as artifact

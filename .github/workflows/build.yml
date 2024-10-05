@@ -1,0 +1,36 @@
+name: Build Angular and Upload Artifact
+
+on:
+  push:
+    branches:
+      - main  # You can change this to any branch you want to trigger on
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Node.js (specify the Node.js version, for example, 18.x)
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18.x'
+
+      # Step 3: Install dependencies using npm
+      - name: Install dependencies
+        run: npm ci  # npm ci is used for faster, more deterministic installs
+
+      # Step 4: Build the Angular application
+      - name: Build Angular app
+        run: npm run build --if-present -- --prod
+
+      # Step 5: Upload dist folder as an artifact
+      - name: Upload dist folder as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist-folder
+          path: dist/
